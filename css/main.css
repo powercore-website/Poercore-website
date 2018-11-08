@@ -1,0 +1,30 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.top-navigation {
+  background-color: #000;
+}
+
+.nav-element {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-banner {
+  background-color: #898989;
+}
+
+.grey-background {
+  background-color: #898989;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer-text {
+  color: #fff;
+}
