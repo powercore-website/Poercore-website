@@ -21,6 +21,35 @@ body {
   background-color: #898989;
 }
 
+.carousel-items > div {
+  display: none;
+}
+
+#image-01-control:checked ~ .carousel-inner #image-01,
+#image-02-control:checked ~ .carousel-inner #image-02,
+#image-03-control:checked ~ .carousel-inner #image-03,
+#image-04-control:checked ~ .carousel-inner #image-04,
+#image-05-control:checked ~ .carousel-inner #image-05 {
+  display: block;
+}
+
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#image-01-control:checked ~ .carousel-inner [for="image-01-control"],
+#image-02-control:checked ~ .carousel-inner [for="image-02-control"],
+#image-03-control:checked ~ .carousel-inner [for="image-03-control"],
+#image-04-control:checked ~ .carousel-inner [for="image-04-control"],
+#image-05-control:checked ~ .carousel-inner [for="image-05-control"] {
+  background-color: #fff;
+}
+
+.icon-colour {
+  fill: #000;
+}
+
 .footer {
   background-color: #000;
 }

@@ -15,7 +15,14 @@
 <body>
   <header>
     <nav class="top-navigation">
-      <ul class="push-none wrapper list-group-inline">
+      <ul class="pad-t-1-2 push-0 wrapper list-group-inline">
+        <li>
+          <a href="#">
+            <i class="push-1-2 icon i-64">
+              <img src="images/logo-black.png" alt="">
+            </i>
+          </a>
+        </li>
         <li class="island-1-2">
           <a class="nav-element" href="#">Home</a>
         </li>
@@ -35,9 +42,6 @@
     </nav>
     <div class="pad-t-2 push-2 header-banner">
       <div class="gutter-2 wrapper text-center">
-        <i class="icon i-128">
-          <img src="images/logo-white.png" alt="">
-        </i>
         <h1 class="tena">CONSISTENT HIGH QUALITY WELDS FROM END TO END</h1>
         <h2>Powercore is your plastic welding solution</h2>
         <a class="btn push-2" href="#">CONTACT US TO LEARN MORE</a>
@@ -94,15 +98,65 @@
         </div>
       </div>
     </section>
+
     <section class="pad-t-2 gutter-2">
       <div class="">
         <h3 class="exa">APPLICATIONS FOR POWERCORE</h3>
         <p class="giga">Powercore is a fully customizable plastic electrofusion welding system for all your fabrication needs</p>
       </div>
-      <div class="embed embed-16by9 push-2">
-        <img class="embed-item" src="images/powercore-spool.png" alt="">
+      <div class="max-length">
+        <div class="carousel">
+          <input class="carousel-input" type="radio" name="applications" id="image-01-control" checked>
+          <input class="carousel-input" type="radio" name="applications" id="image-02-control">
+          <input class="carousel-input" type="radio" name="applications" id="image-03-control">
+          <input class="carousel-input" type="radio" name="applications" id="image-04-control">
+          <input class="carousel-input" type="radio" name="applications" id="image-05-control">
+
+          <div class="carousel-inner relative">
+            <div class="carousel-items">
+              <div class="carousel-item embed embed-golden" id="image-01">
+                <img class="embed-item" src="images/powercore-spool.png" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-02">
+                <img class="embed-item" src="images/map.jpg" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-03">
+                <img class="embed-item" src="images/powercore-spool.png" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-04">
+                <img class="embed-item" src="images/powercore-spool.png" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-05">
+                <img class="embed-item" src="images/powercore-spool.png" alt="">
+              </div>
+            </div>
+            <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-01-control">Image 01</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-02-control">Image 02</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-03-control">Image 03</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-04-control">Image 04</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-05-control">Image 05</label>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
     </section>
+
     <section class="pad-t-2 gutter-2 grey-background">
       <div class="wrapper">
         <h3 class="exa">POWERCORE SPECS</h3>
@@ -137,8 +191,8 @@
           </div>
           <div class="push-2 gutter-1-2 unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
             <div class="text-center">
-              <i class="icon i-18">
-                <img src="" alt="">
+              <i class="icon i-64">
+                <svg><use xlink:href="images/powercore-icons.svg#thickness"/></svg>
               </i>
               <h4>THICKNESS</h4>
               <div class="text-left gutter-2">
@@ -252,7 +306,7 @@
           <li>
             <a class="island-1-4 icon-wrap" href="#">
               <i class="icon i-32">
-                <svg class=""><use xlink:href="images/icons.svg#"/></svg>
+                <svg class=""><use xlink:href="images/powercore-icons.svg#"/></svg>
               </i>
             </a>
           </li>
