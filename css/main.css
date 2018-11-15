@@ -1,0 +1,134 @@
+:root {
+  --color-primary: #081a48;
+  --color-primary-light: #dfdddb;
+  --color-primary-dark: #676869;
+  --color-neutral-grey: #898989;
+  --font-primary: 'Poppins', sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+  background-color: #fff;
+}
+
+nav a  {
+  text-decoration: none;
+}
+
+.toggle-navigation {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.nav-items {
+  display: none;
+}
+
+.nav-items.open {
+  display: block;
+}
+
+.nav-toggle {
+  color: #fff;
+}
+
+/* .nav-open, .nav-close {
+  color: #fff;
+} */
+
+.nav-close {
+  display: none;
+}
+
+.nav-toggle.open .nav-close {
+  display: block;
+}
+
+.nav-toggle.open .nav-open {
+  display: none;
+}
+
+.nav-element {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-element:hover {
+  border-bottom: 6px solid #fff;
+}
+
+.header-banner {
+  background-image: linear-gradient(to top, rgba(201, 201, 201, .5), rgba(201, 201, 201, .8)), url("../images/ottawa.jpg");
+  background-position: 20% 5%;
+  background-size: cover;
+}
+
+.grey-background {
+  background-color: var(--color-primary-light);
+}
+
+.carousel-items > div {
+  display: none;
+}
+
+#image-01-control:checked ~ .carousel-inner #image-01,
+#image-02-control:checked ~ .carousel-inner #image-02,
+#image-03-control:checked ~ .carousel-inner #image-03,
+#image-04-control:checked ~ .carousel-inner #image-04,
+#image-05-control:checked ~ .carousel-inner #image-05 {
+  display: block;
+}
+
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#image-01-control:checked ~ .carousel-inner [for="image-01-control"],
+#image-02-control:checked ~ .carousel-inner [for="image-02-control"],
+#image-03-control:checked ~ .carousel-inner [for="image-03-control"],
+#image-04-control:checked ~ .carousel-inner [for="image-04-control"],
+#image-05-control:checked ~ .carousel-inner [for="image-05-control"] {
+  background-color: #fff;
+}
+
+.icon-colour {
+  fill: #000;
+}
+
+.footer {
+  background-color: #000;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+.regular-navigation {
+  display: none;
+}
+
+@media only screen and (min-width: 608px) {
+  .toggle-navigation {
+    display: none;
+  }
+
+  .regular-navigation {
+    display: block;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .regular-navigation a {
+    color: #fff;
+  }
+
+  .regular-navigation a:hover {
+    border-bottom: 6px solid #fff;
+  }
+
+}
