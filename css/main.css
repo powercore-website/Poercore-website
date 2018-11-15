@@ -1,11 +1,53 @@
-body {
-  font-family: 'Poppins', sans-serif;
+:root {
+  --color-primary: #081a48;
+  --color-primary-light: #dfdddb;
+  --color-primary-dark: #676869;
+  --color-neutral-grey: #898989;
+  --font-primary: 'Poppins', sans-serif;
 }
 
+html {
+  font-family: var(--font-primary);
+  background-color: #fff;
+}
 
+nav a  {
+  text-decoration: none;
+}
 
-.top-navigation {
+.toggle-navigation {
   background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.nav-items {
+  display: none;
+}
+
+.nav-items.open {
+  display: block;
+}
+
+.nav-toggle {
+  color: #fff;
+}
+
+/* .nav-open, .nav-close {
+  color: #fff;
+} */
+
+.nav-close {
+  display: none;
+}
+
+.nav-toggle.open .nav-close {
+  display: block;
+}
+
+.nav-toggle.open .nav-open {
+  display: none;
 }
 
 .nav-element {
@@ -13,12 +55,18 @@ body {
   color: #fff;
 }
 
+.nav-element:hover {
+  border-bottom: 6px solid #fff;
+}
+
 .header-banner {
-  background-color: #898989;
+  background-image: linear-gradient(to top, rgba(201, 201, 201, .5), rgba(201, 201, 201, .8)), url("../images/ottawa.jpg");
+  background-position: 20% 5%;
+  background-size: cover;
 }
 
 .grey-background {
-  background-color: #898989;
+  background-color: var(--color-primary-light);
 }
 
 .carousel-items > div {
@@ -56,4 +104,31 @@ body {
 
 .footer-text {
   color: #fff;
+}
+
+.regular-navigation {
+  display: none;
+}
+
+@media only screen and (min-width: 608px) {
+  .toggle-navigation {
+    display: none;
+  }
+
+  .regular-navigation {
+    display: block;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .regular-navigation a {
+    color: #fff;
+  }
+
+  .regular-navigation a:hover {
+    border-bottom: 6px solid #fff;
+  }
+
 }
