@@ -64,9 +64,10 @@ nav a  {
 }
 
 .header-banner {
-  background-image: linear-gradient(to top, rgba(201, 201, 201, .5), rgba(201, 201, 201, .8)), url("../images/ottawa.jpg");
-  background-position: 20% 5%;
+  background-image: linear-gradient(to top, rgba(83, 118, 167, .3), rgba(83, 118, 167, .6)), url("../images/powercore-banner.jpg");
+  background-position: 20% 20%;
   background-size: cover;
+  color: #fff;
 }
 
 .top-button {
@@ -114,6 +115,11 @@ nav a  {
 
 .icon-colour {
   fill: #000;
+}
+
+
+.header-banner {
+  color: #fff;
 }
 
 .footer {
