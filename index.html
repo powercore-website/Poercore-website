@@ -13,8 +13,13 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 </head>
 <body>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#contentinfo">Jump to footer</a></li>
+  </ul>
   <header class="">
-    <nav class="toggle-navigation">
+    <nav id="nav" class="toggle-navigation">
       <a href="#home" class="island">
         <i class="push-1-2 icon i-64">
           <svg class="logo island-1-4"><use xlink:href="images/powercore-icons.svg#logo" /></svg>
@@ -75,7 +80,7 @@
       </div>
     </div>
   </header>
-  <main class="">
+  <main id="main" tabindex="0">
     <section id="welding-rod" class="wrapper push-2 gutter-2 grid">
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
         <h3 class="exa">POWERCORE WELDING ROD</h3>
@@ -87,7 +92,7 @@
       </div>
       <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
         <div class="embed embed-1by1">
-          <img class="embed-item" src="images/powercore-spool.png" alt="">
+          <img class="embed-item" src="images/powercore-spool.png" alt="Example of Powercore in use.">
         </div>
       </div>
     </section>
@@ -107,23 +112,23 @@
           <div class="carousel-inner relative">
             <div class="carousel-items">
               <div class="carousel-item embed embed-golden" id="image-01">
-                <img class="embed-item" src="images/carousel-01.jpg" alt="">
+                <img class="embed-item" src="images/carousel-01.jpg" alt="Technical illustration demonstrating the application of Powercore to thin sheets.">
               </div>
 
               <div class="carousel-item embed embed-golden" id="image-02">
-                <img class="embed-item" src="images/carousel-02.jpg" alt="">
+                <img class="embed-item" src="images/carousel-02.jpg" alt="Technical illustration demonstrating the use of Powercore for thermoplastic piping applications.">
               </div>
 
               <div class="carousel-item embed embed-golden" id="image-03">
-                <img class="embed-item" src="images/carousel-03.jpg" alt="">
+                <img class="embed-item" src="images/carousel-03.jpg" alt="Technical illustration demonstrating the use of Powercore for cost-saving applications.">
               </div>
 
               <div class="carousel-item embed embed-golden" id="image-04">
-                <img class="embed-item" src="images/carousel-04.jpg" alt="">
+                <img class="embed-item" src="images/carousel-04.jpg" alt="Technical illustration demonstrating the use of Powercore for molding applications.">
               </div>
 
               <div class="carousel-item embed embed-golden" id="image-05">
-                <img class="embed-item" src="images/carousel-05.jpg" alt="">
+                <img class="embed-item" src="images/carousel-05.jpg" alt="Technical illustration demonstrating the use of Powercore for roto-molding applications.">
               </div>
             </div>
             <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
@@ -262,7 +267,7 @@
           </div>
           <div class="gutter-1-4 unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
             <div class="embed embed-1by1">
-              <img class="embed-item" src="images/powercore-sign-mockup.jpg" alt="">
+              <img class="embed-item" src="images/powercore-sign-mockup.jpg" alt="Image of the Powercore logo on a sign.">
             </div>
           </div>
         </div>
@@ -305,7 +310,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="contentinfo" class="footer">
     <div class="island text-center">
       <p class="milli push-none footer-text">Phone: 1-613-226-3050 | Email: info@powercore.com</p>
     </div>
