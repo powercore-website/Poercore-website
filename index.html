@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 </head>
 <body>
-  <header class="">
-    <nav class="toggle-navigation">
+  <header role="banner">
+    <nav role="navigation" class="toggle-navigation">
       <a href="#home" class="island">
         <i class="push-1-2 icon i-64">
           <svg class="logo island-1-4"><use xlink:href="images/powercore-icons.svg#logo" /></svg>
@@ -42,9 +42,9 @@
       </ul>
     </nav>
 
-    <nav class="regular-navigation">
-      <ul class="smooth-scroll gutter-1-2 wrapper pad-t-1-2 push-0 wrapper list-group-inline">
-        <li>
+    <nav role="navigation" class="regular-navigation">
+      <ul id="nav" class="gutter-1-2 wrapper pad-t-1-2 push-0 wrapper list-group-inline">
+        <li class="current">
           <a href="#home" class="island">
             <i class="push-1-2 icon i-64">
               <svg class="logo island-1-4"><use xlink:href="images/powercore-icons.svg#logo" /></svg>
@@ -75,78 +75,74 @@
       </div>
     </div>
   </header>
-  <main class="">
-    <section id="welding-rod" class="push-2 gutter-2 grid">
-      <div class="wrapper">
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 gutter-1-2">
-          <h3 class="exa">POWERCORE WELDING ROD</h3>
-          <p class="giga">Powercore is a flexible thermoplastic electrofusion welding rod approximately 3/16” (4.7mm) in diameter.</p>
-          <p class="push-none">• Powercore uses multiple super fine electrical  resistance wires inside the rod that have no effect on weld strength or longevity.</p>
-          <p class="push-none">• Powercore has been extensively tested to ensure quality</p>
-          <p class="push-none">• Powercore allows for weld lengths from 1 inch to 130 feet (30mm / 28m) in minutes</p>
-          <p class="push">• Powercore comes in 1,000 and 5,000 foot spools</p>
-        </div>
-        <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-          <div class="embed embed-1by1">
-            <img class=" embed-item" src="images/product-shot.jpg" alt="">
-          </div>
+  <main role="main">
+    <section id="welding-rod" class="wrapper push-2 gutter-2 grid">
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <h3 class="exa">POWERCORE WELDING ROD</h3>
+        <p class="giga">Powercore is a flexible thermoplastic electrofusion welding rod approximately 3/16” (4.7mm) in diameter.</p>
+        <p class="push-none">• Powercore uses multiple super fine electrical  resistance wires inside the rod that have no effect on weld strength or longevity.</p>
+        <p class="push-none">• Powercore has been extensively tested to ensure quality</p>
+        <p class="push-none">• Powercore allows for weld lengths from 1 inch to 130 feet (30mm / 28m) in minutes</p>
+        <p class="push-none">• Powercore comes in 1,000 and 5,000 foot spools</p>
+      </div>
+      <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+        <div class="embed embed-1by1">
+          <img class="embed-item" src="images/product-shot.jpg" alt="">
         </div>
       </div>
     </section>
 
     <section id="applications" class="island-2 grey-background">
       <div class="wrapper">
-        <div class="">
-          <h3 class="exa">APPLICATIONS FOR POWERCORE</h3>
-          <p class="giga">Powercore is a fully customizable plastic electrofusion welding system for a wide variety of fabrication needs</p>
-        </div>
-        <div class="">
-          <div class="carousel">
-            <input class="carousel-input" type="radio" name="applications" id="image-01-control" checked>
-            <input class="carousel-input" type="radio" name="applications" id="image-02-control">
-            <input class="carousel-input" type="radio" name="applications" id="image-03-control">
-            <input class="carousel-input" type="radio" name="applications" id="image-04-control">
-            <input class="carousel-input" type="radio" name="applications" id="image-05-control">
-            <div class="carousel-inner relative">
-              <div class="carousel-items">
-                <div class="carousel-item embed embed-golden" id="image-01">
-                  <img class="embed-item" src="images/carousel-01.jpg" alt="">
-                </div>
-
-                <div class="carousel-item embed embed-golden" id="image-02">
-                  <img class="embed-item" src="images/carousel-02.jpg" alt="">
-                </div>
-
-                <div class="carousel-item embed embed-golden" id="image-03">
-                  <img class="embed-item" src="images/carousel-03.jpg" alt="">
-                </div>
-
-                <div class="carousel-item embed embed-golden" id="image-04">
-                  <img class="embed-item" src="images/carousel-04.jpg" alt="">
-                </div>
-
-                <div class="carousel-item embed embed-golden" id="image-05">
-                  <img class="embed-item" src="images/carousel-05.jpg" alt="">
-                </div>
+        <h3 class="exa">APPLICATIONS FOR POWERCORE</h3>
+        <p class="giga">Powercore is a fully customizable plastic electrofusion welding system for a wide variety of fabrication needs</p>
+      </div>
+      <div class="wrapper max-length">
+        <div class="carousel">
+          <input class="carousel-input" type="radio" name="applications" id="image-01-control" checked>
+          <input class="carousel-input" type="radio" name="applications" id="image-02-control">
+          <input class="carousel-input" type="radio" name="applications" id="image-03-control">
+          <input class="carousel-input" type="radio" name="applications" id="image-04-control">
+          <input class="carousel-input" type="radio" name="applications" id="image-05-control">
+          <div class="carousel-inner relative">
+            <div class="carousel-items">
+              <div class="carousel-item embed embed-golden" id="image-01">
+                <img class="embed-item" src="images/carousel-01.jpg" alt="">
               </div>
-              <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
-                <li>
-                  <label class="carousel-btn icon i-18 ir" for="image-01-control">Image 01</label>
-                </li>
-                <li>
-                  <label class="carousel-btn icon i-18 ir" for="image-02-control">Image 02</label>
-                </li>
-                <li>
-                  <label class="carousel-btn icon i-18 ir" for="image-03-control">Image 03</label>
-                </li>
-                <li>
-                  <label class="carousel-btn icon i-18 ir" for="image-04-control">Image 04</label>
-                </li>
-                <li>
-                  <label class="carousel-btn icon i-18 ir" for="image-05-control">Image 05</label>
-                </li>
-              </ul>
+
+              <div class="carousel-item embed embed-golden" id="image-02">
+                <img class="embed-item" src="images/carousel-02.jpg" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-03">
+                <img class="embed-item" src="images/carousel-03.jpg" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-04">
+                <img class="embed-item" src="images/carousel-04.jpg" alt="">
+              </div>
+
+              <div class="carousel-item embed embed-golden" id="image-05">
+                <img class="embed-item" src="images/carousel-05.jpg" alt="">
+              </div>
             </div>
+            <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-01-control">Image 01</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-02-control">Image 02</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-03-control">Image 03</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-04-control">Image 04</label>
+              </li>
+              <li>
+                <label class="carousel-btn icon i-18 ir" for="image-05-control">Image 05</label>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -265,8 +261,8 @@
             <p class="push-none">Email: info@powercore.com</p>
           </div>
           <div class="gutter-1-4 unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
-            <div class="embed embed-3by2">
-              <img class="embed-item " src="images/powercore-sign.jpg" alt="">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/powercore-sign.jpg" alt="">
             </div>
           </div>
         </div>
@@ -275,17 +271,17 @@
     <section class="pad-t-2 gutter-2 grey-background">
       <div class="wrapper">
         <h3 class="exa">GET MORE INFO</h3>
-        <form class="grid" action="thanks.html" method="post">
+        <form class="grid" action="thanks.html" method="post" action="https://formspree.io/info@powercore.com">
           <fieldset class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
             <legend>Contact Information:</legend>
             <label for="name">Full Name:</label>
-            <input id="name" required placeholder="Full Name">
+            <input id="name" placeholder="Full Name" name="name" required>
 
             <label for="name">Email:</label>
-            <input id="name" required placeholder="example@email.com">
+            <input id="name" placeholder="example@email.com" name="email" required>
 
             <label for="name">Phone Number:</label>
-            <input id="name" placeholder="1-555-555-5555">
+            <input id="name" placeholder="1-555-555-5555" name="phone" required>
           </fieldset>
 
           <fieldset class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
@@ -298,7 +294,7 @@
           </fieldset>
 
           <fieldset class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-            <label for="message">Inquiring About:</label>
+            <label for="message" name="message">Inquiring About:</label>
             <textarea id="message"></textarea>
           </fieldset>
 
@@ -309,13 +305,21 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer role="contentinfo" class="footer">
     <div class="island text-center">
       <p class="milli push-none footer-text">Phone: 1-613-226-3050 | Email: info@powercore.com</p>
+      <p class="milli push-none footer-text">© Powercore, 2018</p>
+
     </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#nav').onePageNav();
+    });
+  </script>
 </body>
 </html>
