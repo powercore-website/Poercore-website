@@ -43,8 +43,8 @@
     </nav>
 
     <nav class="regular-navigation">
-      <ul class="smooth-scroll gutter-1-2 wrapper pad-t-1-2 push-0 wrapper list-group-inline">
-        <li>
+      <ul id="nav" class="gutter-1-2 wrapper pad-t-1-2 push-0 wrapper list-group-inline">
+        <li class="current">
           <a href="#home" class="island">
             <i class="push-1-2 icon i-64">
               <svg class="logo island-1-4"><use xlink:href="images/powercore-icons.svg#logo" /></svg>
@@ -271,17 +271,17 @@
     <section class="pad-t-2 gutter-2 grey-background">
       <div class="wrapper">
         <h3 class="exa">GET MORE INFO</h3>
-        <form class="grid" action="thanks.html" method="post">
+        <form class="grid" action="thanks.html" method="post" action="https://formspree.io/info@powercore.com">
           <fieldset class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
             <legend>Contact Information:</legend>
             <label for="name">Full Name:</label>
-            <input id="name" required placeholder="Full Name">
+            <input id="name" placeholder="Full Name" name="name" required>
 
             <label for="name">Email:</label>
-            <input id="name" required placeholder="example@email.com">
+            <input id="name" placeholder="example@email.com" name="email" required>
 
             <label for="name">Phone Number:</label>
-            <input id="name" placeholder="1-555-555-5555">
+            <input id="name" placeholder="1-555-555-5555" name="phone" required>
           </fieldset>
 
           <fieldset class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
@@ -294,7 +294,7 @@
           </fieldset>
 
           <fieldset class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
-            <label for="message">Inquiring About:</label>
+            <label for="message" name="message">Inquiring About:</label>
             <textarea id="message"></textarea>
           </fieldset>
 
@@ -313,5 +313,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#nav').onePageNav();
+    });
+  </script>
 </body>
 </html>

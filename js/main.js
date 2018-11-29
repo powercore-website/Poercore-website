@@ -9,18 +9,21 @@ $('.nav-items a').on('click', function () {
   $('.nav-toggle').toggleClass('open');
 });
 
-// Smooth Scroll
-
-$(document).ready(function(){
- $('.smooth-scroll, .smooth-scroll a').on('click', function(event) {
-   if (this.hash !== "") {
-     event.preventDefault();
-     var hash = this.hash;
-     $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 800, function(){
-       window.location.hash = hash;
-     });
-   }
- });
+//Current state in navigation
+$('#nav').onePageNav({
+  currentClass: 'current',
+  changeHash: false,
+  scrollSpeed: 750,
+  scrollThreshold: 0.5,
+  filter: '',
+  easing: 'swing',
+  begin: function() {
+    //I get fired when the animation is starting
+  },
+  end: function() {
+    //I get fired when the animation is ending
+  },
+  scrollChange: function($currentListItem) {
+    //I get fired when you enter a section and I pass the list item of the section
+  }
 });
