@@ -169,4 +169,9 @@ a:focus {
     border-bottom: 6px solid #fff;
   }
 
+  .regular-navigation .current {
+    padding-bottom: 1rem;
+    border-bottom: 6px solid #fff;
+  }
+
 }
