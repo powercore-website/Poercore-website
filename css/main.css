@@ -19,6 +19,19 @@ nav a  {
   text-decoration: none;
 }
 
+a:focus {
+  outline: 3px solid var(--color-primary);
+}
+
+.skip-links a {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 .toggle-navigation {
   background-color: var(--color-primary);
   position: fixed;
